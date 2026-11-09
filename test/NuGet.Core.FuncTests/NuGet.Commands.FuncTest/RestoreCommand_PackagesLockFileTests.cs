@@ -66,6 +66,9 @@ namespace NuGet.Commands.FuncTest
                 result.Success.Should().BeFalse();
                 logger.ErrorMessages.Count.Should().Be(1);
                 logger.ErrorMessages.Single().Should().Contain("NU1004");
+                logger.ErrorMessages.Single().Should().Contain("nuget.exe restore -ForceEvaluate");
+                logger.ErrorMessages.Single().Should().Contain("dotnet restore --force-evaluate");
+                logger.ErrorMessages.Single().Should().Contain("RestoreForceEvaluate=true");
                 logger.ErrorMessages.Single().Should().Contain("The package references have changed for net46. Lock file's package references: a:[1.0.0, ), project's package references: None.");
             }
         }

@@ -844,7 +844,7 @@ namespace NuGet.Commands {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The packages lock file is inconsistent with the project dependencies so restore can&apos;t be run in locked mode. Disable the RestoreLockedMode MSBuild property or pass an explicit --force-evaluate option to run restore to update the lock file..
+        ///   Looks up a localized string similar to The packages lock file is inconsistent with the project dependencies so restore can&apos;t be run in locked mode. Disable the RestoreLockedMode MSBuild property or rerun restore to update the lock file using nuget.exe restore -ForceEvaluate, dotnet restore --force-evaluate, or the RestoreForceEvaluate=true MSBuild property..
         /// </summary>
         internal static string Error_RestoreInLockedMode {
             get {

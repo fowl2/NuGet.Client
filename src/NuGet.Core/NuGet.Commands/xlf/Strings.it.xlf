@@ -473,9 +473,9 @@
         <note />
       </trans-unit>
       <trans-unit id="Error_RestoreInLockedMode">
-        <source>The packages lock file is inconsistent with the project dependencies so restore can't be run in locked mode. Disable the RestoreLockedMode MSBuild property or pass an explicit --force-evaluate option to run restore to update the lock file.</source>
-        <target state="translated">Il file di blocco dei pacchetti non è coerente con le dipendenze del progetto, di conseguenza non è possibile eseguire il ripristino nella modalità di blocco. Disabilitare la proprietà RestoreLockedMode di MSBuild oppure passare un'opzione esplicita --force-evaluate per eseguire il ripristino e aggiornare il file di blocco.</target>
-        <note />
+        <source>The packages lock file is inconsistent with the project dependencies so restore can't be run in locked mode. Disable the RestoreLockedMode MSBuild property or rerun restore to update the lock file using nuget.exe restore -ForceEvaluate, dotnet restore --force-evaluate, or the RestoreForceEvaluate=true MSBuild property.</source>
+        <target state="needs-review-translation">Il file di blocco dei pacchetti non è coerente con le dipendenze del progetto, di conseguenza non è possibile eseguire il ripristino nella modalità di blocco. Disabilitare la proprietà RestoreLockedMode di MSBuild oppure passare un'opzione esplicita --force-evaluate per eseguire il ripristino e aggiornare il file di blocco.</target>
+        <note>Do not localize RestoreLockedMode, RestoreForceEvaluate, nuget.exe, dotnet restore, -ForceEvaluate, or --force-evaluate.</note>
       </trans-unit>
       <trans-unit id="Error_RestorePruningDirectPackageReference">
         <source>PackageReference {0} will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.</source>

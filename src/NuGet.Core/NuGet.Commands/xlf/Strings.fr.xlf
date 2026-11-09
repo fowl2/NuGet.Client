@@ -473,9 +473,9 @@
         <note />
       </trans-unit>
       <trans-unit id="Error_RestoreInLockedMode">
-        <source>The packages lock file is inconsistent with the project dependencies so restore can't be run in locked mode. Disable the RestoreLockedMode MSBuild property or pass an explicit --force-evaluate option to run restore to update the lock file.</source>
-        <target state="translated">Le fichier de verrouillage des packages n'est pas cohérent avec les dépendances de projet, la restauration ne peut donc pas être exécutée en mode verrouillé. Désactivez la propriété MSBuild RestoreLockedMode, ou passez l'option explicite --force-evaluate pour exécuter la restauration et mettre à jour le fichier de verrouillage.</target>
-        <note />
+        <source>The packages lock file is inconsistent with the project dependencies so restore can't be run in locked mode. Disable the RestoreLockedMode MSBuild property or rerun restore to update the lock file using nuget.exe restore -ForceEvaluate, dotnet restore --force-evaluate, or the RestoreForceEvaluate=true MSBuild property.</source>
+        <target state="needs-review-translation">Le fichier de verrouillage des packages n'est pas cohérent avec les dépendances de projet, la restauration ne peut donc pas être exécutée en mode verrouillé. Désactivez la propriété MSBuild RestoreLockedMode, ou passez l'option explicite --force-evaluate pour exécuter la restauration et mettre à jour le fichier de verrouillage.</target>
+        <note>Do not localize RestoreLockedMode, RestoreForceEvaluate, nuget.exe, dotnet restore, -ForceEvaluate, or --force-evaluate.</note>
       </trans-unit>
       <trans-unit id="Error_RestorePruningDirectPackageReference">
         <source>PackageReference {0} will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.</source>

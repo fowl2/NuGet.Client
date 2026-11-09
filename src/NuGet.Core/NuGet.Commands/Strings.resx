@@ -596,7 +596,8 @@ For more information, visit https://docs.nuget.org/docs/reference/command-line-r
     <comment>Do not localize snupkg and symbols.nupkg</comment>
   </data>
   <data name="Error_RestoreInLockedMode" xml:space="preserve">
-    <value>The packages lock file is inconsistent with the project dependencies so restore can't be run in locked mode. Disable the RestoreLockedMode MSBuild property or pass an explicit --force-evaluate option to run restore to update the lock file.</value>
+    <value>The packages lock file is inconsistent with the project dependencies so restore can't be run in locked mode. Disable the RestoreLockedMode MSBuild property or rerun restore to update the lock file using nuget.exe restore -ForceEvaluate, dotnet restore --force-evaluate, or the RestoreForceEvaluate=true MSBuild property.</value>
+    <comment>Do not localize RestoreLockedMode, RestoreForceEvaluate, nuget.exe, dotnet restore, -ForceEvaluate, or --force-evaluate.</comment>
   </data>
   <data name="Error_ReadingProjectInformation" xml:space="preserve">
     <value>Unable to read project information for '{0}': {1}</value>
